@@ -1,0 +1,19 @@
+.card {
+    color: var(--white);
+    background-color: var(--black);
+    position: relative;
+    margin-top: 3rem;
+    padding: 1.5px;
+}
+
+.card img {
+    width: 100%;
+    height: 75%;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+
