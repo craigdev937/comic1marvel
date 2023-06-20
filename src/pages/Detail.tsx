@@ -22,7 +22,6 @@ export const Detail = () => {
         }
     };
 
-
     return (
         <React.Fragment>
             {isLoading ? (

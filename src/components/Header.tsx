@@ -1,13 +1,15 @@
 import React from "react";
 import "./Header.css";
 import Logo from "@public/Logo.svg";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export const Header = () => {
     return (
         <React.Fragment>
             <section className="header">
-                <img src={Logo} alt="Marvel Logo" />
+                <Link to="/">
+                    <img alt="Marvel Logo" src={Logo} />
+                </Link>
                 <input 
                     className="header__search" 
                     type="text" 

@@ -7,22 +7,23 @@ type DET = {
 };
 
 export const DetailCard = ({detail}: DET) => {
-
     return (
         <React.Fragment>
             <section 
                 className="detail__card"
             >
-                <div className="detail__title">
+                <aside className="detail__left">
                     <h3>{detail.name}</h3>
-                </div>
-                <p>{detail.description}</p>
-                <img 
-                    className="detail__image"
-                    alt={detail.name} 
-                    src={`${detail.thumbnail.path
-                        }.${detail.thumbnail.extension}`} 
-                />
+                    <p>{detail.description}</p>
+                </aside>
+                <aside className="detail__right">
+                    <img 
+                        className="detail__image"
+                        alt={detail.name} 
+                        src={`${detail.thumbnail.path
+                            }.${detail.thumbnail.extension}`} 
+                    />
+                </aside>
             </section>
         </React.Fragment>
     );

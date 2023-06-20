@@ -1,0 +1,30 @@
+.detail__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+    color: var(--white);
+    font-size: 1.3rem;
+    text-align: justify;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.7)
+    );
+}
+
+.detail__left {
+    flex-basis: 50%;
+}
+
+.detail__right {
+    flex-basis: 20%;
+}
+
+.detail__image {
+    height: 500px;
+    width: auto;
+}
+
+
