@@ -93,5 +93,83 @@ export interface ICharacters {
     }
 };
 
+export interface IDetail {
+    code: number,
+    copyright: string,
+    attributionText: string,
+    attributionHTML: string,
+    etag: string,
+    data: {
+        offset: number,
+        limit: number,
+        total: number,
+        count: number,
+        returned: number,
+        results: {
+            id: number,
+            name: string,
+            description: string,
+            resourceURI: string,
+            type: string,
+            modified: string,
+            thumbnail: {
+                path: string,
+                extension: string
+            }
+        }[]
+    }
+};
+
+export interface IFind {
+    id: number,
+    name: string,
+    modified: string,
+    thumbnail: {
+        path: string,
+        extension: string
+    },
+    resourceURI: string,
+    comics: {
+        available: number,
+        collectionURI: string,
+        items: {
+            resourceURI: string,
+            name: string
+        }[],
+        returned: number,
+    },
+    series: {
+        available: number,
+        collectionURI: string,
+        items: {
+            resourceURI: string,
+            name: string
+        }[],
+        returned: number,
+    },
+    stories: {
+        available: number,
+        collectionURI: string,
+        items: {
+            resourceURI: string,
+            name: string,
+            type: string
+        }[],
+        returned: number,
+    },
+    events: {
+        available: number,
+        collectionURI: string,
+        items: {
+            resourceURI: string,
+            name: string
+        }[],
+        returned: number
+    },
+    urls: {
+        type: string,
+        url: string
+    }[]
+};
 
 

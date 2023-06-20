@@ -6,7 +6,6 @@ export const Marvel = () => {
     const { error, isLoading, data } = 
         MarvelAPI.useCharQuery();
         const CharData = data && data.data.results;
-        console.log(data!);
 
     if (error) {
         if ("status" in error) {
