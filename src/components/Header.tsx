@@ -10,11 +10,6 @@ export const Header = () => {
                 <Link to="/">
                     <img alt="Marvel Logo" src={Logo} />
                 </Link>
-                <input 
-                    className="header__search" 
-                    type="text" 
-                    placeholder="Enter Character"
-                />
             </section>
             <Outlet />
         </React.Fragment>

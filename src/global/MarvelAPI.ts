@@ -1,9 +1,9 @@
 import { createApi, 
     fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { ICharacters, IDetail } from "../models/Interfaces";
+import { ICharacters, IDetail, IFind } from "../models/Interfaces";
 const apiKEY = process.env.API_KEY;
 const hashKEY = process.env.HASH_KEY;
-const URL = "https://gateway.marvel.com/v1/public";
+const URL = "https://gateway.marvel.com:443/v1/public";
 
 export const MarvelAPI = createApi({
     reducerPath: "MarvelAPI",

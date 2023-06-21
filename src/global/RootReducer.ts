@@ -4,7 +4,7 @@ import { MarvelAPI } from "./MarvelAPI";
 
 export const Reducer = configureStore({
     reducer: {
-        [MarvelAPI.reducerPath]: MarvelAPI.reducer,
+        [MarvelAPI.reducerPath]: MarvelAPI.reducer
     },  //  gDM = getDefaultMiddleware
     middleware: (gdm) => gdm().concat(MarvelAPI.middleware),
 });
